@@ -1,0 +1,13 @@
+{% extends 'navbar.html'%}
+
+{% block title %}HomePage{% endblock title %}
+
+{% block content %}
+<h1>Home</h1>
+{% for post in form %}
+<h1>{{post.title}}</h1>
+<p><b>{{post.intro}}</b></p>
+<p>{{post.body}}</p>
+<p>{{post.author}}</p>
+{% endfor %}
+{% endblock content %}
